@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jw.org</title>
+    <style>
+        *{
+            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+        }  
+        #back{
+            background-color: lightgray;
+            width: 1350px;
+            height: 700px;
+            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+        #topo{
+            background-color: white;
+            position: relative;
+            float: left;
+            border: solid purple 1px;
+            width: 1200px;
+            height: 100px;
+        }
+        #logo{
+            position: relative;
+            float: left;
+            border: solid green 1px; 
+            width: 200px;
+            height: 100px;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+        }
+        #topoSuperior{
+            position: relative;
+            float: left;
+            border: solid red 1px; 
+            width: 1000px;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        #topoInferior{
+            position: relative;
+            float: left;
+             border: solid blue 1px; 
+            width: 1000px;
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+
+        #meio{
+            background-color: white;
+            position: relative;
+            float: left;
+            border: solid yellow 1px;
+            width: 1200px;
+            height: 400px;
+            box-sizing: border-box;
+            text-align: center;
+            align-items: center;
+        }
+        #imagemEsquerda{
+            position: relative;
+            float: left;
+             border: solid purple 1px;
+            width: 600px;
+            height: 400px;
+            box-sizing: border-box;
+
+         
+        }
+        #conteudoDireita{
+            position: relative;
+            float: left;
+              border: solid red 1px; 
+            width: 595px;
+            height: 400px;
+            box-sizing: border-box;
+
+        }
+
+
+        #rodape{
+            background-color: white;
+            border: solid green 1px;
+            float: left;
+            width: 1200px;
+            height: 50px;
+            box-sizing: border-box;
+
+        }
+        #conteudoDestaque{
+            position: relative;
+            float: left;
+              border: solid blue 1px; 
+            width: 600px;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        #conteudoVejaMais{
+            position: relative;
+            float: left;
+              border: solid yellow 1px; 
+            width: 598px;
+            height: 50px;
+            box-sizing: border-box;
+
+        }
+
+
+        .jw{
+            position: relative;
+            left: 30px;
+        }
+
+
+        h1{
+            color: rgb(0, 0, 0);
+            position: relative;
+            left: 40px;
+        }
+     
+
+        .menuH1 li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            text-decoration: none;
+            position: relative;
+            left: 500px;
+            bottom: 20px;
+        }
+        .menuH1 li {
+           border: 0px;
+        }
+
+
+        .menuH2{
+            margin: 0 auto;
+            box-sizing: border-box;
+            background-color: rgb(100, 152, 250);
+            font-family: NotoSans,Arial,"Arial Unicode MS",sans-serif;
+        }
+        .menuH2 li{
+            display: inline;
+        }
+        .menuH2 li a{
+            display: inline-block;
+            color: aliceblue;
+            text-decoration: none;
+            padding: 15px;
+            transition: background .5s;    
+        }
+        .menuH2 li a:hover{
+            background-color: rgb(50, 50, 50);
+        }
+
+
+        .conteudoD{
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-family: NotoSans,Arial,"Arial Unicode MS",sans-serif;
+            list-style-type: none;
+            width: 600px;
+            height:400px;
+        }
+        .conteudoD a h3{
+            color: black;
+            text-align: left;
+            font-size: 40px;
+            width: 300px;
+            height: 20px;
+            position: relative;
+            top: 40px;
+        }
+        .conteudoD a h3:visited{
+            text-decoration: none;
+        }
+        .conteudoD a h3:hover {
+            text-decoration: underline;
+        }
+
+        .conteudoD li p{
+            color: black;
+            text-align: left;
+            font-size: 20px;
+            position: relative;
+            width: 350px;
+            height: 20px;
+            top: 150px;
+            position: relative;
+            top: 220px;
+        }
+
+        .conteudoD li button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        font-family: NotoSans,Arial,"Arial Unicode MS",sans-serif;
+        position: relative;
+        top: 200px;
+        position: relative;
+        top: 280px;
+        }
+
+        .conteudoD li button{
+            background-color: rgb(100, 152, 250);
+        }
+
+        .conteudoD2{
+            position: relative;
+            padding: 5px ;
+        }
+
+        .conteudoVm{
+            text-align: right;
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-family: NotoSans,Arial,"Arial Unicode MS",sans-serif;
+            list-style-type: none;
+            background-color:white;
+        }
+        .conteudoVm:visited{
+            text-decoration: none;
+        }
+        
+        .conteudoVm li a {
+            text-decoration: none;
+            padding: 2px;
+
+        }
+        .conteudoVm li a:hover{
+            background-color: rgb(100, 152, 250);
+        }
+       
+    </style>
+    <script src="https://kit.fontawesome.com/c3bb350daf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="tudo">
+        <div id="back">
+        
+            <div id="topo">
+
+                <div id="logo">
+                    <img class="jw" src="https://assetsnffrgf-a.akamaihd.net/assets/ct/4d24ff9dac/images/siteLogo-jworg-print-rtl.png" width="140" height="100">
+                </div>
+    
+                <div id="topoPai">
+    
+                    <div id="topoSuperior"> 
+    
+                        <h1>Testemunhas de Jeová</h1>
+                            <ul class="menuH1">
+                                <li><i class="fa-solid fa-language"></i></li>
+                                <li><button type="button">Portugues (Brasil)</button></li>
+                                <li> <i class="fa-solid fa-right-to-bracket"></i></li>
+                                <li><button type="button">Login</button></li>
+                                <li><input type="text" placeholder="Pesquisar.."></li> 
+                                <li><i class="fa fa-search"></i></li>
+                            </ul>
+    
+                    </div>
+    
+                    <div id="topoInferior"> 
+    
+                            <ul class="menuH2">
+                                <li><i class="fa-solid fa-house-chimney"></i></li>
+                                <li><a href="https://www.jw.org/pt/">Inicio</a> </li>
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <li><a href="https://www.jw.org/pt/ensinos-biblicos/">Ensinos Biblicos</a></li>
+                                <i class="fa-solid fa-photo-film"></i>
+                                <li><a href="https://www.jw.org/pt/biblioteca/"> Biblioteca</a></li>
+                                <i class="fa-solid fa-globe"></i>
+                                <li><a href="https://www.jw.org/pt/noticias/noticias-testemunhas-jeova/">Noticias</a></li>
+                                <i class="fa-solid fa-users"></i>
+                                <li><a href="https://www.jw.org/pt/testemunhas-de-jeova/">Quem Somos</a></li>
+                            </ul>
+    
+                    </div>
+                </div>
+            </div>
+            <div id="meio">
+    
+                <div id="imagemEsquerda"> 
+                    <img src="Images/Captura de tela 2022-09-02 095822.png" >
+                </div>
+    
+                <div id="conteudoDireita"> 
+    
+                    <ul class="conteudoD">
+                        <li> <a href="https://www.jw.org/pt/testemunhas-de-jeova/perguntas-frequentes/jw-curso-da-biblia/"><h3>Como funciona nosso curso bíblico gratuito?</h3></a></li>
+                        <li> <p>Veja as respostas para as perguntas mais frequentes.</p></li>
+                        <li> <button type="button">Veja a Resposta</button></li>
+                    </ul>
+    
+                </div>
+    
+            </div>
+    
+            <div id="rodape">
+                <div id="conteudoDestaque"> 
+                    <h3 class="conteudoD2">Em Destaque</h3>
+                </div>
+    
+                <div id="conteudoVejaMais">
+                    <ul class="conteudoVm">
+                        <li>
+                            <a href="https://www.jw.org/pt/ultimos-artigos-destaque/">Veja mais</a> 
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>   
+
+        </div>
+    </div>
+</body>
+</html>

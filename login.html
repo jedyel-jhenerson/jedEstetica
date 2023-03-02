@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+</html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <title>login de algo</title>
+        <meta name="description" content="contato da auto escola gopouva">
+
+        <style>
+            div,table,p,h1{
+            text-align: center;
+        }
+        </style>
+
+    </head>
+    
+    <div id="login">
+        <body>
+            <tr>
+                <h1 style="color:yellowgreen" >Create Account</h1>
+                </tr>
+            
+                <!--inicio do meio do site-->
+            
+                <img src="Images/facebook.png" hight="50" width="50" alt="icone facebook">
+                <img src="Images/Gmail-Logo.png" hight="80" width="80" alt="icone Gmail">
+                <img src="Images/linkedinicon.png"  hight="60" width="60" alt="icone likidin">
+            
+                <tr>
+                    <p>or use your email for registration</p>
+                </tr>
+            
+            
+                <form action="pagina-processa-dados.html" method="post">
+            
+                    <table>
+            
+                        <tr>
+                            <td>
+                                <input type="textNome" name="Nome" placeholder="Nome">
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>
+                                <input type="email" name="e-mail" placeholder="Email">
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>
+                                <input type="password" name="senha" placeholder="Senha">
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td> CPF:</td>
+                        </tr>
+
+                       
+                            <td>
+                            <input required  placeholder=___.___.___-__  minlength="11" maxlength="11" type="tel">
+                            </td>
+
+                            <script>
+                                if ( CPF == "") {
+                                alert("CPF não existe ou nao foi escrito");
+                                return false;
+                            }
+                            </script>
+                         
+                    <!--envia os dados a OUTRA PAGINA-->
+            
+                    <tr>
+                        <td><input type="submit" value="Enviar"></td>
+                    </tr>
+            
+            </form>
+            
+            <tr>
+                <td><a href="cadastro.html">Faça seu email</a></td>
+            </tr>
+            
+            
+            </div>
+       
+        </body>
+
+</html>

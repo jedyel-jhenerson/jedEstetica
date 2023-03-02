@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    
+    <script>
+        function clicar(){
+            
+            var sonic = document.getElementById("sonic");
+            if(sonic.src.endsWith('sonic2.png')==true){
+                sonic.src="Images/sonic.png";
+            }
+            else{
+                sonic.src="Images/sonic2.png";
+            }
+
+        }
+
+        function colocarMouse(){
+            var sonic = document.getElementById("sonic");
+            if(sonic.src.endsWith('sonic2.png')==true){
+                sonic.src="Images/sonic.png"
+            }
+            else{
+                sonic.src="Images/sonic2.png"
+                sonic.style.width="500px";
+                sonic.style.height="500px";
+            }
+        }
+
+        function entrar(){
+
+            var sonic = document.getElementById("tela");
+            sonic.src="Images/sonic.jpg";
+            sonic.style.width="500px";
+            sonic.style.height="500px";
+
+        }
+        function sair(){
+            var sonic = document.getElementById("tela");
+            sonic.src="Images/sonic2.jpg";
+            sonic.style.width="500px";
+            sonic.style.height="500px";
+        }
+
+    </script>
+</head>
+<body>
+    <table>
+        <tr id="tabelaImages">
+            <td>
+                <div id="sonic3">
+                    <img id="sonic" src="Images/sonic.png" onclick="clicar()">
+                    <img id="sonic2" style="display:none" src="Images/sonic2.png">
+                </div>
+            </td>
+            <td>
+                <div id="marioluigi">
+                    <img id="mario" src="Images/sonic.png" style="width:500px;height:500px;" onmouseover="colocarMouse()">
+                    <img id="luigi" src="Images/sonic2.png" style="display:none ; width: 500px; height: 500px;">
+                </div>
+            </td>
+            <td>
+                <div id="tiririca">
+                    <img id="tela" src="Images/sonic.png" style="width:500px;height:500px;" onmouseover="entrar()" onmouseout="sair()">
+                    <img src="Images/sonic2.png" style="display: none;">
+                </div>
+            </td>
+        </tr>
+    </div>
+</body>
+</html>

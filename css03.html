@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <style>
+
+        #topoSite{
+            width: 1200px;
+            height: 150px;
+            border: solid gray 1px;
+            text-align: center;
+            margin: auto;
+            font-family: cursive;
+            background-color: #31a63d;
+        }
+        #menuPrincipal{
+            width: 1200px;
+            height: 80px;
+            border: dotted grey 1px;
+            margin: auto;
+            line-height: 80px;
+            background-color: #9eff9b;
+        }
+        #menuPrincipal ul{
+            list-style-type: none;
+            margin: 0;
+            text-align: center;
+            padding: 0;
+        }
+        #menuPrincipal ul li{
+            display: inline;
+            padding: 10px;
+            font-family: cursive;
+            text-decoration: none;
+            /*background-color: #68d36c;*/
+            font-weight: bold;
+        }
+        #menuPrincipal ul li a{
+            text-decoration: none;
+            color: inherit  ;
+            padding: 10px;
+        }
+        #menuPrincipal ul li a:hover{
+            background-color: #31a63d;
+        }
+        #menuPrincipal ul li a:active{
+            color: white;
+        }
+        #meioSite{
+            width: 1200px;
+            height: 640px;
+            border: solid pink 1px;
+            /* border-radius: 30px; */
+            margin: auto;
+            font-weight: bold;
+        }
+        #noticia01{
+            width: 1200px;
+            height: 210px;
+            border: solid gray 1px;
+            margin: auto;
+            background-color: #31a63d;
+        }
+        #noticia02{
+            width: 1200px;
+            height: 210px;
+            border: solid gray 1px;
+            margin: auto;
+            background-color: #68d36c;
+        }
+        #noticia03{
+            width: 1200px;
+            height: 210px;
+            border: solid gray 1px;
+            margin: auto;
+            background-color: #31a63d;
+        }
+        .imagem{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 8%;
+            margin-top: 15px;
+        }
+        .descricao{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        .saibaMais{
+            text-align: right;
+        }
+        .saibaMais a{
+            border-right: 20px;
+        }
+        .saibaMais a:visited{
+            color: white;
+        }
+        #rodape{
+            margin: auto;
+            width: 1200px;
+            height: 120px;
+            border: dotted gray 1px;
+            text-align: center;
+            line-height: 60px;
+            font-family: cursive;
+            background-color: #9eff9b;
+            font-weight: bold;
+        }
+        #rodape ul{
+            list-style-type: none;
+            margin: 0;
+            text-align: center;
+            padding: 0;
+        }
+        #rodape ul li{
+            display: inline;
+            padding: 10px;
+            text-decoration: none;
+            /*background-color: #68d36c;*/
+        }
+        #rodape ul li a{
+            text-decoration: none;
+            color: inherit  ;
+            padding: 10px;
+        }
+        #rodape ul li a:hover{
+            background-color: #31a63d;
+        }
+        #rodape ul li a:active{
+            color: white;
+        }
+
+        /*ponto = essa classe pode ser chamada em qualquer elemento*/
+        /*div.SuaClasse = essa classe pode ser chamada somente pelo elemento citado*/
+        .tituloGrande{
+            color: white;
+            font-size: xx-large;
+        }
+        .subtitulo{
+            color: white;
+            font-weight: bolder;
+        }
+
+
+    </style>
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div id="topoSite">
+        <h1 class="tituloGrande">Faça um site em 10 min!!</h1>
+        <h3 class="subtitulo">Aprenda a usar CMS</h3>
+    </div>
+
+    <div id="menuPrincipal">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <div id="meioSite">
+
+        <div id="noticia01">
+            <div class="imagem"><img src="Images/facebook.png" width="100" height="100"/>
+            </div>
+            <div class="descricao">
+                <p>Facebook tem acordo preliminar em processo por escândalo da Cambridge Analytica</p>
+            </div>
+            <div class="saibaMais">
+                <a style="text-decoration:none ;" href="https://g1.globo.com/economia/tecnologia/noticia/2022/08/28/facebook-tem-acordo-preliminar-em-processo-por-escandalo-da-cambridge-analytica.ghtml" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div id="noticia02">
+            <div class="imagem"><img src="Images/gmail.png" width="100" height="100"/>
+            </div>
+            <div class="descricao">
+                <p>O Gmail está de cara nova; veja como utilizar os recursos</p>
+            </div>
+            <div class="saibaMais">
+                <a style="text-decoration:none ;" href="https://www.estadao.com.br/link/cultura-digital/o-gmail-esta-de-cara-nova-veja-como-utilizar-os-recursos/" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div id="noticia03">
+            <div class="imagem"><img src="Images/linkedin.png" width="100" height="100"/>
+            </div>
+            <div class="descricao">
+                <p>Mercado de emprego está aquecido, mostra levantamento do LinkedIn</p>
+            </div>
+            <div class="saibaMais">
+                <a style="text-decoration:none ;" href="https://www.cnnbrasil.com.br/business/mercado-de-emprego-esta-aquecido-mostra-levantamento-do-linkedin/" target="_blank">Saiba Mais</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="rodape">
+        <ul>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        Todos direitos reservados®
+    </div>
+
+</body>
+</html>
