@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');  
+
+body{
+    background-color: #cccccc;
+    background-position: center;
+}
+#MeioSite{
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+#MeioSite h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #f7b926;
+    margin-bottom: 12px;
+}
+
+img{
+    display: block;
+    margin: 0px auto;
+}
+
+#MeioSite h3 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    color: #f7b926;
+    margin-bottom: 12px;
+}
+#MeioSite p {
+    font-size: 18px;
+    text-align: center;
+
+}
+#Rodape p {
+    font-size: 18px;
+    text-align: center;
+
+}
