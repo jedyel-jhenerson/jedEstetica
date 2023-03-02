@@ -1,0 +1,8 @@
+p span { 
+    display: inline-block;
+}
+
+p span:hover {
+    font-size: 200%;
+    cursor: pointer;
+} 
